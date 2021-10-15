@@ -1,0 +1,23 @@
+
+.header {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 300px 5px 0;
+}
+#table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 69%;
+    margin-left: 5px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    width: 100px;
+    padding: 5px;
+}
+th {
+    background: #e4d728;
+}
+
