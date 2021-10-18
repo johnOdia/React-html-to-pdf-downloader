@@ -1,13 +1,12 @@
 
 .header {
-    text-align: center;
     font-size: 1.6rem;
-    margin: 0 300px 5px 0;
+    margin: 0 0px 5px 220px;
 }
 #table {
     text-align: center;
     border-collapse: collapse;
-    width: 69%;
+    width: 585px;
     margin-left: 5px;
 }
 table, th, td {

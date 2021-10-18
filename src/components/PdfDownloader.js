@@ -12,6 +12,8 @@ const PdfDownloader = () => {
     const generatePdf = () => {
         const doc = new jsPDF("p", "pt", "a4");
         const html = document.querySelector('#content')
+        const pdfWidth = doc.internal.pageSize.getWidth();
+        console.log(pdfWidth);
         doc.html(html, {
             callback: (pdf) => {
                 pdf.save("mypdf.pdf");
