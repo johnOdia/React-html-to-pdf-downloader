@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import jsPDF from 'jspdf';
 import TableRowPdfData from './TableRowPdfData';
 import "./PdfDownloader.css"
+import { AmiriRegular } from "./fonts";
 
 const PdfDownloader = () => {
     const [value, setValue] = useState([]);
@@ -11,10 +12,10 @@ const PdfDownloader = () => {
 
     const generatePdf = () => {
         const doc = new jsPDF("p", "pt", "a4");
-        const html = document.querySelector('#content')
-        const pdfWidth = doc.internal.pageSize.getWidth();
-        console.log(pdfWidth);
-        doc.html(html, {
+        doc.addFileToVFS("Amiri-Regular.ttf", AmiriRegular);
+        doc.addFont("Amiri-Regular.ttf", "Amiri", "normal");
+
+        doc.html(document.querySelector('#content'), {
             callback: (pdf) => {
                 pdf.save("mypdf.pdf");
             }

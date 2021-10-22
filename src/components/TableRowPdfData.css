@@ -1,4 +1,6 @@
-
+/* #content{
+    font-family: 'Amiri';
+} */
 .header {
     font-size: 1.6rem;
     margin: 0 0px 5px 220px;
@@ -8,6 +10,7 @@
     border-collapse: collapse;
     width: 585px;
     margin-left: 5px;
+    font-family: 'Amiri';
 }
 table, th, td {
     border: 1px solid black;
