@@ -16,7 +16,7 @@ const TableRowPdfData = ({ data }) => {
 
     return (
         <div id='content' >
-            <div className='header'>Member List</div>
+            <div className='header'>Member_List</div>
             <div className='container'>
                 <table id='table'>
                     <thead>
